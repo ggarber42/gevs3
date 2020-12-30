@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +16,15 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <AniLink
+      to="/using-typescript/"
+      cover
+      direction="left"
+      duration={1}
+      bg="#fff"
+    >
+      Go to "Using TypeScript"
+    </AniLink>
   </Layout>
 )
 
