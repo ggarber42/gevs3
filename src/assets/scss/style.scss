@@ -1,17 +1,180 @@
-body{
-    // background: red;
-
-    header{
-        background-color: #fff;
-        padding: 0;
-        position: relative;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        display: grid;
-        grid-template-columns: 20% 80%;
-        align-items: center;
-        justify-content: space-between;
-        
+body {
+  // background: red;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /*topo*/
+  header {
+    background-color: #fff;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    @media (max-width: 1030px) {
+      display: flex;
     }
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+
+        @media (min-width: 1320px) {
+          justify-content: space-between;
+        }
+        @media (max-width: 1030px) {
+          display: none;
+        }
+        li {
+          a {
+            text-decoration: none;
+            color: #4a4a4a;
+            display: block;
+            line-height: 1.5;
+            padding: 0.5rem 0.15em;
+            position: relative;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0.15em;
+            @media (min-width: 1320px) {
+              margin: 0 0.5em;
+              padding: 0.5rem 0.75em;
+            }
+            &:last-child {
+              @media (min-width: 1400px) {
+                margin-right: 2em;
+              }
+            }
+
+            &:hover {
+              text-decoration: none;
+              color: #6fc11d;
+            }
+          }
+        }
+        @media (max-width: 1400px) {
+          margin-right: 2em;
+        }
+      }
+      &.vertical-nav {
+        &.close {
+          ul {
+            display: none;
+          }
+        }
+        &.open {
+          ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+          }
+        }
+        @media (max-width: 1400px) {
+          ul {
+            margin-right: 0;
+          }
+        }
+        ul {
+          position: absolute;
+          top: 60px;
+          right: 0;
+          left: 0;
+          background: #fff;
+          a.navbar-item {
+            color: #4a4a4a;
+            display: block;
+            position: relative;
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0 0.15em;
+          }
+        }
+      }
+    }
+    .hamburger-button {
+      display: block;
+      justify-self: flex-end;
+      z-index: 1;
+      margin: 0 2em;
+      @media (min-width: 1031px) {
+        display: none;
+      }
+    }
+  }
+  /*video*/
+  section {
+    &.video-container {
+      height: 90vh;
+      video {
+        position: fixed;
+        inset: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        object-fit: fill;
+        object-position: center center;
+        min-width: 1312px;
+        overflow: hidden;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 5% 55% 50% 20%;
+        justify-content: space-around;
+        max-width: 100vw;
+        h1 {
+          margin: 0;
+          color: white;
+          line-height: 1;
+          z-index: 5;
+        }
+        h3 {
+          color: #a5ef5c;
+          line-height: 1;
+        }
+        h1,
+        h3 {
+          text-align: center;
+          font-weight: bold;
+          grid-column-start: 2;
+          grid-column-end: 2;
+        }
+        @media screen and (max-width: 1300px) {
+            grid-template-columns: 10% 40% 60%
+        }
+        @media screen and (max-width: 1020px) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        @media screen and (min-width: 501px) {
+          row-gap: 1em;
+          h1 {
+            padding: 0.25em 0 0;
+            font-size: 3.5rem;
+          }
+          h3 {
+            font-size: 1.75rem;
+          }
+        }
+        @media screen and (max-width: 500px) {
+          row-gap: 0.5em;
+          h1 {
+            padding-bottom: 0;
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.5rem;
+          }
+          h1,
+          h3 {
+            padding: 0 1em;
+          }
+        }
+      }
+    }
+  }
 }

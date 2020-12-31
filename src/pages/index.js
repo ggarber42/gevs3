@@ -1,30 +1,36 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
+import { Fade } from "react-reveal"
 
 import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
+import BgMp4 from "../assets/videos/bg-video.mp4"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <AniLink
-      to="/using-typescript/"
-      cover
-      direction="left"
-      duration={1}
-      bg="#fff"
-    >
-      Go to "Using TypeScript"
-    </AniLink>
+    <section className="video-container">
+      <video autoPlay muted loop>
+        <source src={withPrefix(BgMp4)} type="video/mp4" />
+      </video>
+      <div className="content">
+        <Fade bottom>
+          <h1>
+            Bem Vindo <br />
+            ao GEVS
+          </h1>
+        </Fade>
+        <Fade delay={1200} bottom>
+          <h3>
+            Grupo de Estudos em Vida <br />
+            Silvestre
+          </h3>
+        </Fade>
+      </div>
+    </section>
   </Layout>
 )
 
