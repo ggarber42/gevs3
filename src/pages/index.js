@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, withPrefix } from "gatsby"
 import { Fade } from "react-reveal"
+import Button from "react-bootstrap/Button"
 
 import Layout from "../components/Layout"
 import Image from "../components/image"
@@ -30,6 +31,19 @@ const IndexPage = () => (
           </h3>
         </Fade>
       </div>
+    </section>
+    <section className="intro">
+      <div className="heading">
+        <h3>
+          Quem somos
+        </h3>
+      </div>
+      <div className="main">
+        <p>
+        Somos um grupo de pesquisadores de diferentes instituições com o objetivo em comum de estudar diversas formas de vida, seja ela fauna ou flora, em ambientes com predominações vegetacionais abertas, como pantanal, cerrado e campinaranas na Amazônia. Buscamos estudar a vida silvestre como um todo, tentando compreender suas relações complexas dentro de mosaicos de paisagens heterogêneas.
+        </p>
+      </div>
+      <Button variant="success">Saiba mais</Button>
     </section>
   </Layout>
 )

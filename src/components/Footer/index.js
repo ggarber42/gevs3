@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className="copyleft">
         <a target="_blank" href="https://www.devgarber.me">
-          Feito por Garber - {new Date().getFullYear()}
+          Desenvolvido por Garber - {new Date().getFullYear()}
         </a>
       </div>
     </footer>
