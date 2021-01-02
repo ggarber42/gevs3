@@ -1,4 +1,5 @@
 import React from "react"
+import "react-bulma-components/dist/react-bulma-components.min.css"
 import { Link, withPrefix } from "gatsby"
 import { Fade } from "react-reveal"
 import Button from "react-bootstrap/Button"
@@ -33,17 +34,36 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="intro">
-      <div className="heading">
-        <h3>
-          Quem somos
-        </h3>
+      <div className="columns">
+        <div className="column is-10 is-offset-1">
+          <div className="heading">
+            <Fade left delay={500}>
+              <h3>Quem somos</h3>
+            </Fade>
+          </div>
+          <div className="main">
+            <p>
+              Somos um grupo de pesquisadores de diferentes instituições com o
+              objetivo em comum de estudar diversas formas de vida, seja ela
+              fauna ou flora, em ambientes com predominações vegetacionais
+              abertas, como pantanal, cerrado e campinaranas na Amazônia.
+              Buscamos estudar a vida silvestre como um todo, tentando
+              compreender suas relações complexas dentro de mosaicos de
+              paisagens heterogêneas.
+            </p>
+          </div>
+          <AniLink
+            cover
+            bg="#fff"
+            to="/page-2"
+            title="Logo"
+            direction="right"
+            style={{ color: "#fff", width: "100%", height: "100%", cursor: 'pointer' }}
+          >
+            <Button variant="success" style={{cursor: 'pointer'}}>Saiba mais</Button>
+          </AniLink>
+        </div>
       </div>
-      <div className="main">
-        <p>
-        Somos um grupo de pesquisadores de diferentes instituições com o objetivo em comum de estudar diversas formas de vida, seja ela fauna ou flora, em ambientes com predominações vegetacionais abertas, como pantanal, cerrado e campinaranas na Amazônia. Buscamos estudar a vida silvestre como um todo, tentando compreender suas relações complexas dentro de mosaicos de paisagens heterogêneas.
-        </p>
-      </div>
-      <Button variant="success">Saiba mais</Button>
     </section>
   </Layout>
 )
