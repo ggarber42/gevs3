@@ -19,7 +19,7 @@ const Navlinks = () => (
       <AniLink
         className="navbar-item"
         cover
-        to="/about"
+        to="/equipe"
         direction="left"
         duration={1}
         bg="#fff"

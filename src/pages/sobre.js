@@ -32,19 +32,18 @@ const PaginaSobre = () => {
     }
   `)
 
-  console.log(data);
-
   const markDown = data.allMarkdownRemark.edges[0].node
-
-  console.log(markDown)
 
   return (
     <Layout>
-      <SEO title={markDown.frontmatter.title}/>
+      <SEO 
+        title={markDown.frontmatter.title}
+        description={markDown.frontmatter.description}
+      />
       <ImageCover fluid={markDown.frontmatter.image.childImageSharp.fluid} />
       <TextContainer>
         <div className="column is-10 is-offset-1">
-          <Fade left delay={800}>
+          <Fade left delay={300}>
             <h1>{markDown.frontmatter.title}</h1>
           </Fade>
           <PageText> {markDown.rawMarkdownBody} </PageText>
