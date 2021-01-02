@@ -45,7 +45,7 @@ const PaginaSobre = () => {
       <ImageCover fluid={markDown.image.childImageSharp.fluid} />
       <TextContainer>
         <div className="column is-10 is-offset-1">
-          <Fade left delay={500}>
+          <Fade left delay={800}>
             <h1>{markDown.title}</h1>
           </Fade>
           <PageText> {markDown.description} </PageText>
