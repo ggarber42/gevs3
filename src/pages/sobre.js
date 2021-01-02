@@ -13,7 +13,7 @@ const PaginaSobre = () => {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(sobre)/" } }) {
         edges {
           node {
-            id
+            id            
             frontmatter {
               title
               path
@@ -22,33 +22,32 @@ const PaginaSobre = () => {
                   fluid(maxWidth: 2048, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
-                  fixed(width: 125, height: 125) {
-                    ...GatsbyImageSharpFixed
-                  }
                 }
               }
-              description
             }
+            rawMarkdownBody
           }
         }
       }
     }
   `)
 
-  const markDown = data.allMarkdownRemark.edges[0].node.frontmatter
+  console.log(data);
+
+  const markDown = data.allMarkdownRemark.edges[0].node
 
   console.log(markDown)
 
   return (
     <Layout>
-      <SEO title="Home" />
-      <ImageCover fluid={markDown.image.childImageSharp.fluid} />
+      <SEO title={markDown.frontmatter.title}/>
+      <ImageCover fluid={markDown.frontmatter.image.childImageSharp.fluid} />
       <TextContainer>
         <div className="column is-10 is-offset-1">
           <Fade left delay={800}>
-            <h1>{markDown.title}</h1>
+            <h1>{markDown.frontmatter.title}</h1>
           </Fade>
-          <PageText> {markDown.description} </PageText>
+          <PageText> {markDown.rawMarkdownBody} </PageText>
         </div>
       </TextContainer>
     </Layout>

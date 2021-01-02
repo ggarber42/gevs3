@@ -3,7 +3,7 @@ import media from "styled-media-query"
 import Img from "gatsby-image"
 
 export const ImageCover = styled(Img)`
-  height: 80vh;
+  height: 85vh;
 `
 
 export const PageText = styled.p`
