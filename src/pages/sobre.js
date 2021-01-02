@@ -1,7 +1,9 @@
 import React from "react"
-import "react-bulma-components/dist/react-bulma-components.min.css"
 import { graphql, useStaticQuery } from "gatsby"
+import "react-bulma-components/dist/react-bulma-components.min.css"
+import { Fade } from "react-reveal"
 
+import { ImageCover, PageText, TextContainer } from "../components/Utils/Ui"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
@@ -20,6 +22,9 @@ const PaginaSobre = () => {
                   fluid(maxWidth: 2048, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
+                  fixed(width: 125, height: 125) {
+                    ...GatsbyImageSharpFixed
+                  }
                 }
               }
               description
@@ -37,19 +42,15 @@ const PaginaSobre = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div
-        className="full-width-image-container margin-top-0"
-        style={{
-          backgroundImage: `url(${
-            !!markDown.image.childImageSharp
-              ? markDown.image.childImageSharp.fluid.src
-              : markDown.image.childImageSharp.fluid.src
-          })`,
-          height: '70vh',
-          backgroundPositionY: '100vh',
-        }}
-       />
-        <p> {markDown.description} </p>
+      <ImageCover fluid={markDown.image.childImageSharp.fluid} />
+      <TextContainer>
+        <div className="column is-10 is-offset-1">
+          <Fade left delay={500}>
+            <h1>{markDown.title}</h1>
+          </Fade>
+          <PageText> {markDown.description} </PageText>
+        </div>
+      </TextContainer>
     </Layout>
   )
 }

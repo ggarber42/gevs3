@@ -3,12 +3,12 @@ import "react-bulma-components/dist/react-bulma-components.min.css"
 import { Link, withPrefix } from "gatsby"
 import { Fade } from "react-reveal"
 import Button from "react-bootstrap/Button"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/Layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-
+import { TextContainer, PageText } from "../components/Utils/Ui"
 import BgMp4 from "../assets/videos/bg-video.mp4"
 
 const IndexPage = () => (
@@ -33,7 +33,7 @@ const IndexPage = () => (
         </Fade>
       </div>
     </section>
-    <section className="intro">
+    <TextContainer className="intro">
       <div className="columns">
         <div className="column is-10 is-offset-1">
           <div className="heading">
@@ -58,13 +58,20 @@ const IndexPage = () => (
             to="/page-2"
             title="Logo"
             direction="right"
-            style={{ color: "#fff", width: "100%", height: "100%", cursor: 'pointer' }}
+            style={{
+              color: "#fff",
+              width: "100%",
+              height: "100%",
+              cursor: "pointer",
+            }}
           >
-            <Button variant="success" style={{cursor: 'pointer'}}>Saiba mais</Button>
+            <Button variant="success" style={{ cursor: "pointer" }}>
+              Saiba mais
+            </Button>
           </AniLink>
         </div>
       </div>
-    </section>
+    </TextContainer>
   </Layout>
 )
 

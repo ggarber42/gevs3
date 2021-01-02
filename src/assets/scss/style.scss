@@ -48,11 +48,11 @@ body {
                 margin-right: 2em;
               }
             }
-
             &:hover {
               text-decoration: none;
-              color: #6fc11d;
+              color: #6fc11d !important;
             }
+
           }
         }
         @media (max-width: 1400px) {
