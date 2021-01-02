@@ -10,7 +10,7 @@ const Navlinks = () => (
         bg="#fff"
         duration={1}
         className="navbar-item"
-        to="/page-2"
+        to="/sobre"
       >
         Sobre
       </AniLink>

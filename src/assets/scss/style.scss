@@ -200,7 +200,8 @@ body {
           margin-bottom: .6666em;
           text-align: justify;
           font-weight: 300;
-          @media (min-width: 1320px) {
+          @media (max-width: 760px) {
+            font-size: 1.25rem;
           }
         }
         button {
