@@ -55,7 +55,7 @@ const IndexPage = () => (
           <AniLink
             cover
             bg="#fff"
-            to="/page-2"
+            to="/sobre"
             title="Logo"
             direction="right"
             style={{
