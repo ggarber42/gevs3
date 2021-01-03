@@ -5,6 +5,7 @@ import { Fade } from "react-reveal"
 
 import SEO from "../components/seo"
 import Layout from "../components/Layout"
+import Projeto from "../components/Projeto"
 import {
   ImageCover,
   PageText,
@@ -56,7 +57,7 @@ const PaginaProjetos = () => {
 
   const markdown = data.allMarkdownRemark.edges[0].node
 
-  console.log(data)
+  console.log(markdown)
 
   return (
     <Layout>
@@ -71,11 +72,14 @@ const PaginaProjetos = () => {
             <h1>{markdown.frontmatter.title}</h1>
           </Fade>
           <FlexContainer>
-            {markdown.frontmatter.main.blurbs.map((blurb, index) =>
-              blurb.image ? (
-                <Img fluid={blurb.image.childImageSharp.fluid} />
-              ) : null
-            )}
+            {markdown.frontmatter.main.blurbs.map((blurb, index) => (
+              // <Img fluid={blurb.image.childImageSharp.fluid} />
+              <Projeto
+                image={blurb.image.childImageSharp.fluid} 
+                nome={blurb.nome}
+                index={index}
+              />
+            ))}
           </FlexContainer>
         </div>
       </TextContainer>
