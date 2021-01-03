@@ -54,37 +54,37 @@ const PaginaEquipe = () => {
 
   const markdown = data.allMarkdownRemark.edges[0].node
 
-  const [settings, setSettings] = useState({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: window.innerWidth > 900 ? 4 : 1,
-    slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  })
-
-  const handleResize = () => setSettings({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: window.innerWidth > 900 ? 4 : 1,
-    slidesToScroll: window.innerWidth > 900 ? 4 : 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  })
-
-  window.addEventListener('resize', handleResize)
-
-  // const settings = {
+  // const [settings, setSettings] = useState({
   //   dots: false,
   //   infinite: true,
   //   speed: 500,
-  //   slidesToShow: 4,
+  //   slidesToShow: window.innerWidth > 900 ? 4 : 1,
   //   slidesToScroll: 4,
   //   autoplay: true,
   //   autoplaySpeed: 3000,
-  // }
+  // })
+
+  // const handleResize = () => setSettings({
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: window.innerWidth > 900 ? 4 : 1,
+  //   slidesToScroll: window.innerWidth > 900 ? 4 : 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  // })
+
+  // window.addEventListener('resize', handleResize)
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  }
 
   return (
     <Layout>
