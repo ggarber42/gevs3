@@ -10,8 +10,9 @@ export const FlexContainer = styled.section`
   display: flex;
   flex-flow: row wrap;
   min-height: 50vh;
+  margin-top: 1em;
   div{
-    margin: 0 .5em;
+    margin: 2em .5em 0;
   }
 `
 
@@ -53,7 +54,10 @@ export const TextContainer = styled.section`
   .slick-next{
     right: -70px;
   }
-  
+  .slick-slide img{
+    height: 150px !important;
+    width: auto !important;
+  }
 `
 export const PublicaoesContaier = styled.section`
 p{

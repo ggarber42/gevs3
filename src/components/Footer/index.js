@@ -35,7 +35,7 @@ const Footer = () => {
                   bg="#fff"
                   duration={1}
                   className="navbar-item"
-                  to="/page-2"
+                  to="/sobre"
                 >
                   Sobre
                 </AniLink>
@@ -44,7 +44,7 @@ const Footer = () => {
                 <AniLink
                   className="navbar-item"
                   cover
-                  to="/about"
+                  to="/equipe"
                   direction="left"
                   duration={1}
                   bg="#fff"
@@ -56,7 +56,7 @@ const Footer = () => {
                 <AniLink
                   className="navbar-item"
                   cover
-                  to="/about"
+                  to="/projetos"
                   direction="left"
                   duration={1}
                   bg="#fff"
@@ -72,7 +72,7 @@ const Footer = () => {
                 <AniLink
                   className="navbar-item"
                   cover
-                  to="/about"
+                  to="/publicacoes"
                   direction="left"
                   duration={1}
                   bg="#fff"
@@ -84,7 +84,7 @@ const Footer = () => {
                 <AniLink
                   className="navbar-item"
                   cover
-                  to="/about"
+                  to="/parceiros"
                   direction="left"
                   duration={1}
                   bg="#fff"
@@ -96,7 +96,7 @@ const Footer = () => {
                 <AniLink
                   className="navbar-item"
                   cover
-                  to="/about"
+                  to="/galeria"
                   direction="left"
                   duration={1}
                   bg="#fff"

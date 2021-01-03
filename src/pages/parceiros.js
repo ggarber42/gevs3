@@ -4,7 +4,12 @@ import Img from "gatsby-image"
 import "react-bulma-components/dist/react-bulma-components.min.css"
 import { Fade } from "react-reveal"
 
-import { ImageCover, PageText, TextContainer, FlexContainer } from "../components/Utils/Ui"
+import {
+  ImageCover,
+  PageText,
+  TextContainer,
+  FlexContainer,
+} from "../components/Utils/Ui"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
@@ -52,23 +57,19 @@ const PaginaParceiros = () => {
 
   const markdown = data.allMarkdownRemark.edges[0].node
 
-  console.log(markdown)
-
   return (
     <Layout>
-      {/* <SEO
-        title={markDown.frontmatter.title}
-        description={markDown.frontmatter.description}
-      /> */}
+      <SEO
+        title={markdown.frontmatter.title}
+        description={markdown.frontmatter.description}
+      />
       <ImageCover fluid={markdown.frontmatter.image.childImageSharp.fluid} />
       <TextContainer>
         <div className="column is-10 is-offset-1">
-          <Fade left delay={300}>
-            <h1>{markdown.frontmatter.title}</h1>
-          </Fade>
+          <h1>{markdown.frontmatter.title}</h1>
           <FlexContainer>
             {markdown.frontmatter.main.blurbs.map((blurb, index) => (
-              <Fade bottom delay={index*100}>
+              <Fade bottom delay={index * 200}>
                 <Img fixed={blurb.image.childImageSharp.fixed} />
               </Fade>
             ))}
