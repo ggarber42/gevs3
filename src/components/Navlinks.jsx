@@ -43,7 +43,7 @@ const Navlinks = () => (
       <AniLink
         className="navbar-item"
         cover
-        to="/about"
+        to="/publicacoes"
         direction="left"
         duration={1}
         bg="#fff"
@@ -55,7 +55,7 @@ const Navlinks = () => (
       <AniLink
         className="navbar-item"
         cover
-        to="/about"
+        to="/parceiros"
         direction="left"
         duration={1}
         bg="#fff"

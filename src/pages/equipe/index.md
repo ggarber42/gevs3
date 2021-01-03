@@ -47,7 +47,7 @@ main:
           lates: http_lattes.cnpq.br_2436257515937405
         - image: /img/equipe/Marcione.jpg
           nome: Marcione Brito de Oliveira <br />Bióloga 
-          lattes: http___lattes.cnpq.br_0033028853576389
+          lates: http___lattes.cnpq.br_0033028853576389
         - image: /img/equipe/Thais.jpg
           nome: Thaís Figueiredo Conceição <br />Bióloga
           lates: http_lattes.cnpq.br_3012439824570509
