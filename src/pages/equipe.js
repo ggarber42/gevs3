@@ -1,11 +1,11 @@
-import React, { useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa"
-
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { isMobile } from "react-device-detect"
+
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import { ImageCover, TextContainer } from "../components/Utils/Ui"
@@ -76,14 +76,29 @@ const PaginaEquipe = () => {
 
   // window.addEventListener('resize', handleResize)
 
-  const settings = {
+  let settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+  }
+
+  if (isMobile) {
+    settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    }
+    settings.slidesToShow = 1;
+    settings.slidesToScroll = 1;
+  } else {
+    settings.slidesToShow = 4;
+    settings.slidesToScroll = 4;
   }
 
   return (
@@ -100,7 +115,7 @@ const PaginaEquipe = () => {
           >
             {markdown.frontmatter.main.blurbs.map(blurb => (
               // <Img fixed={blurb.image.childImageSharp.fixed} />
-              <Membro 
+              <Membro
                 image={blurb.image.childImageSharp.fixed}
                 nome={blurb.nome}
                 lates={blurb.lates}

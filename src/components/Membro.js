@@ -5,8 +5,10 @@ const Membro = ({image, nome, lates}) => {
     return (
         <>
           <Img fixed={image} />
-          <h2 dangerouslySetInnerHTML={{ __html: nome}} />
-          <a href={lates} target="_blank">lattes</a>
+          <div>
+            <h2 dangerouslySetInnerHTML={{ __html: nome}} />
+            <a href={lates} target="_blank">lattes</a>
+          </div>
         </>
     )
 }
