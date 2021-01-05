@@ -67,6 +67,20 @@ export const TextContainer = styled.section`
     line-height: 1.125;
     text-transform: uppercase;
   }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  ${media.lessThan("900px")`
+    .mobile{
+      display: block;
+    }
+    .desktop{
+      display: none;
+    }
+    `}
   .slick-arrow {
     color: #318749;
     width: 50px;

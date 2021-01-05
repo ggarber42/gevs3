@@ -76,7 +76,7 @@ const PaginaEquipe = () => {
 
   // window.addEventListener('resize', handleResize)
 
-  let settings = {
+  const settingsMobile = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -84,22 +84,21 @@ const PaginaEquipe = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    slidesToShow : 1,
+    slidesToScroll : 1
   }
 
-  if (isMobile) {
-    settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    }
-    settings.slidesToShow = 1;
-    settings.slidesToScroll = 1;
-  } else {
-    settings.slidesToShow = 4;
-    settings.slidesToScroll = 4;
+  const settingsDesktop = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 3000,
   }
+
+
 
   return (
     <Layout>
@@ -108,20 +107,38 @@ const PaginaEquipe = () => {
       <TextContainer>
         <div className="column is-10 is-offset-1">
           <h1>{markdown.frontmatter.title}</h1>
+          <div className="desktop">
+            <Slider
+              {...settingsDesktop}
+              nextArrow={<FaArrowAltCircleRight type="next" size={5} />}
+              prevArrow={<FaArrowAltCircleLeft type="prev" size={5} />}
+            >
+              {markdown.frontmatter.main.blurbs.map(blurb => (
+                // <Img fixed={blurb.image.childImageSharp.fixed} />
+                <Membro
+                  image={blurb.image.childImageSharp.fixed}
+                  nome={blurb.nome}
+                  lates={blurb.lates}
+                />
+              ))}
+            </Slider>
+          </div>
+          <div className="mobile">
           <Slider
-            {...settings}
-            nextArrow={<FaArrowAltCircleRight type="next" size={5} />}
-            prevArrow={<FaArrowAltCircleLeft type="prev" size={5} />}
-          >
-            {markdown.frontmatter.main.blurbs.map(blurb => (
-              // <Img fixed={blurb.image.childImageSharp.fixed} />
-              <Membro
-                image={blurb.image.childImageSharp.fixed}
-                nome={blurb.nome}
-                lates={blurb.lates}
-              />
-            ))}
-          </Slider>
+              {...settingsMobile}
+              nextArrow={<FaArrowAltCircleRight type="next" size={5} />}
+              prevArrow={<FaArrowAltCircleLeft type="prev" size={5} />}
+            >
+              {markdown.frontmatter.main.blurbs.map(blurb => (
+                // <Img fixed={blurb.image.childImageSharp.fixed} />
+                <Membro
+                  image={blurb.image.childImageSharp.fixed}
+                  nome={blurb.nome}
+                  lates={blurb.lates}
+                />
+              ))}
+            </Slider>
+          </div>
         </div>
       </TextContainer>
     </Layout>
