@@ -92,12 +92,14 @@ export const TextContainer = styled.section`
   }
   .slick-prev {
     left: -70px;
+    z-index: 10;
     ${media.lessThan("900px")`
     left: 0px;
     `}
   }
   .slick-next {
     right: -70px;
+    z-index: 10;
     ${media.lessThan("900px")`
     right: 0px;
     `}
