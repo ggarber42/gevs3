@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import { ImageCover } from "../components/Utils/Ui"
+import { ImageCover, GaleriaText } from "../components/Utils/Ui"
 
 const PaginaGaleria = () => {
   const data = useStaticQuery(graphql`
@@ -42,18 +42,11 @@ const PaginaGaleria = () => {
         description={markdown.frontmatter.description}
       />
       <ImageCover fluid={markdown.frontmatter.image.childImageSharp.fluid} />
-      <div
-        style={{
-          display: "flex",
-          minHeight: "30vh",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "3rem", fontWeight: "boldest" }}>
+      <GaleriaText>
+        <h1 style={{fontWeight: "boldest" }}>
           Em construção...
         </h1>
-      </div>
+      </GaleriaText>
     </Layout>
   )
 }

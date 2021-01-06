@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 import Img from "gatsby-image"
-import { Suspense } from "react"
 
 export const ImageCover = styled(Img)`
   height: 65vh;
@@ -60,7 +59,7 @@ export const TextContainer = styled.section`
   background: #fff;
   padding: 3rem 1.5rem;
   h1 {
-    color: #a5ef5c;
+    color: #318749;
     font-size: 2em;
     margin-bottom: 0.5em;
     font-weight: 600;
@@ -109,14 +108,6 @@ export const TextContainer = styled.section`
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      .gatsby-image-wrapper {
-        width: 200px !important;
-        height: 200px !important;
-        img {
-          height: 150px !important;
-          width: auto !important;
-        }
       }
       & > div {
         text-align: center;
@@ -128,4 +119,36 @@ export const PublicaoesContaier = styled.section`
   p {
     margin: 1em 0;
   }
+`
+export const EquipeContainer = styled.section`
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2em;
+  &>div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      width: 150px;
+      height: 150px;
+    }
+    & > div {
+      text-align: center;
+    }
+  }
+`
+
+export const GaleriaText = styled.div`
+display: flex;
+min-height: 30vh;
+justify-content: center;
+align-items: center;
+h1{
+  font-size: 3rem;
+  ${media.lessThan("900px")`
+  font-size: 2rem;
+    `}
+}
 `

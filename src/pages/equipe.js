@@ -8,7 +8,11 @@ import { isMobile } from "react-device-detect"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
-import { ImageCover, TextContainer } from "../components/Utils/Ui"
+import {
+  ImageCover,
+  TextContainer,
+  EquipeContainer,
+} from "../components/Utils/Ui"
 import Membro from "../components/Membro"
 
 const PaginaEquipe = () => {
@@ -54,91 +58,23 @@ const PaginaEquipe = () => {
 
   const markdown = data.allMarkdownRemark.edges[0].node
 
-  // const [settings, setSettings] = useState({
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: window.innerWidth > 900 ? 4 : 1,
-  //   slidesToScroll: 4,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  // })
-
-  // const handleResize = () => setSettings({
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: window.innerWidth > 900 ? 4 : 1,
-  //   slidesToScroll: window.innerWidth > 900 ? 4 : 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  // })
-
-  // window.addEventListener('resize', handleResize)
-
-  const settingsMobile = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow : 1,
-    slidesToScroll : 1
-  }
-
-  const settingsDesktop = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  }
-
-
-
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Equipe" />
       <ImageCover fluid={markdown.frontmatter.image.childImageSharp.fluid} />
       <TextContainer>
         <div className="column is-10 is-offset-1">
           <h1>{markdown.frontmatter.title}</h1>
-          <div className="desktop">
-            <Slider
-              {...settingsDesktop}
-              nextArrow={<FaArrowAltCircleRight type="next" size={5} />}
-              prevArrow={<FaArrowAltCircleLeft type="prev" size={5} />}
-            >
-              {markdown.frontmatter.main.blurbs.map(blurb => (
-                // <Img fixed={blurb.image.childImageSharp.fixed} />
-                <Membro
-                  image={blurb.image.childImageSharp.fixed}
-                  nome={blurb.nome}
-                  lates={blurb.lates}
-                />
-              ))}
-            </Slider>
-          </div>
-          <div className="mobile">
-          <Slider
-              {...settingsMobile}
-              nextArrow={<FaArrowAltCircleRight type="next" size={5} />}
-              prevArrow={<FaArrowAltCircleLeft type="prev" size={5} />}
-            >
-              {markdown.frontmatter.main.blurbs.map(blurb => (
-                // <Img fixed={blurb.image.childImageSharp.fixed} />
-                <Membro
-                  image={blurb.image.childImageSharp.fixed}
-                  nome={blurb.nome}
-                  lates={blurb.lates}
-                />
-              ))}
-            </Slider>
-          </div>
+          <EquipeContainer>
+            {markdown.frontmatter.main.blurbs.map(blurb => (
+              // <Img fixed={blurb.image.childImageSharp.fixed} />
+              <Membro
+                image={blurb.image.childImageSharp.fluid.src}
+                nome={blurb.nome}
+                lates={blurb.lates}
+              />
+            ))}
+          </EquipeContainer>
         </div>
       </TextContainer>
     </Layout>
