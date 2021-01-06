@@ -150,8 +150,14 @@ body {
             grid-column-start: 2;
             grid-column-end: 2;
           }
-          @media screen and (max-width: 1300px) {
-            grid-template-columns: 10% 40% 60%;
+          @media screen and (max-width: 1500px) {
+            grid-template-columns: 15% 55% 50% 20%;
+          }
+          @media screen and (max-width: 1400px) {
+            grid-template-columns: 18% 40% 60%;
+          }
+          @media screen and (max-width: 1190px) {
+            grid-template-columns: 30% 40% 60%;
           }
           @media screen and (max-width: 1020px) {
             display: flex;
