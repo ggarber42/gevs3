@@ -23,3 +23,11 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Descricao SEO, name: description, widget: text}
           - {label: Body , name: body, widget: markdown, hint: Escreva o texto aqui}
+      - file: "src/pages/publicacoes/index.md"
+        label: "Página de Publicações"
+        name: "publicacoes"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Descricao SEO, name: description, widget: text}
+          - {label: Body , name: body, widget: markdown, hint: Escreva o texto aqui}
