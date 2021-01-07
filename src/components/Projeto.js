@@ -1,23 +1,20 @@
 import React from "react"
 import Img from "gatsby-image"
+import { Card } from "react-bootstrap"
+import { Fade } from "react-reveal"
 
-import { ProjetoContainer, PageText } from "../components/Utils/Ui"
+import { PageText } from "../components/Utils/Ui"
 
 const Projeto = ({ image, nome, index }) => {
   return (
-    <ProjetoContainer>
-      {index % 2 === 0 ? (
+    <Fade bottom delay={200 + index*100}>
+      <Card>
         <>
           <PageText>{nome}</PageText>
-          <Img fluid={image} />
+          <img src={image} />
         </>
-      ) : (
-        <>
-          <Img fluid={image} />
-          <PageText>{nome}</PageText>
-        </>
-      )}
-    </ProjetoContainer>
+      </Card>
+    </Fade>
   )
 }
 

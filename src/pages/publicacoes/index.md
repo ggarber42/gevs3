@@ -1,6 +1,6 @@
 ---
 path: /publicacoes
-title: Publicacoes
+title: Publicações
 image: /img/publicacoes.jpg
 description: Página com as publicações do Gevs
 ---

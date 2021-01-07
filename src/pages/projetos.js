@@ -8,7 +8,7 @@ import Layout from "../components/Layout"
 import Projeto from "../components/Projeto"
 import {
   ImageCover,
-  PageText,
+  ProjetoContainer,
   TextContainer,
   FlexContainer,
 } from "../components/Utils/Ui"
@@ -66,21 +66,21 @@ const PaginaProjetos = () => {
         description={markdown.frontmatter.description}
       />
       <ImageCover fluid={markdown.frontmatter.image.childImageSharp.fluid} />
-      <TextContainer>
+      <TextContainer style={{ background: "#fbfbfb" }}>
         <div className="column is-10 is-offset-1">
-          <Fade left delay={300}>
+          <Fade left delay={100}>
             <h1>{markdown.frontmatter.title}</h1>
           </Fade>
-          <FlexContainer>
+          <ProjetoContainer>
             {markdown.frontmatter.main.blurbs.map((blurb, index) => (
               // <Img fluid={blurb.image.childImageSharp.fluid} />
               <Projeto
-                image={blurb.image.childImageSharp.fluid} 
+                image={blurb.image.childImageSharp.fluid.src}
                 nome={blurb.nome}
                 index={index}
               />
             ))}
-          </FlexContainer>
+          </ProjetoContainer>
         </div>
       </TextContainer>
     </Layout>

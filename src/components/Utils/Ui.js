@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 import Img from "gatsby-image"
+import { Card } from "react-bootstrap";
 
 export const ImageCover = styled(Img)`
   height: 65vh;
@@ -28,30 +29,58 @@ export const PageText = styled.p`
     font-size: 1rem;
   `}
 `
+// export const ProjetoContainer = styled.section`
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-gap: 2em;
+//   background: #fff;
+//   // box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+//   ${media.lessThan("900px")`
+//     display: flex;
+//     flex-direction: column;
+//   `}
+//   background: #fff;
+//   padding: 1em;
+//   border-radius: 1em;
+//   p${PageText} {
+//     display: flex;
+//     align-items: center;
+//     font-size: 1.25em;
+//   }
+//   // transform: scale(.95);
+//   transition: all 0.5s ease;
+//   &:hover {
+//     // transform: scale(1);
+//     box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+//       0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+//   }
+// `
+
 export const ProjetoContainer = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2em;
-  background: #fff;
-  // box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
-  ${media.lessThan("900px")`
-    display: flex;
-    flex-direction: column;
-  `}
-  background: #fff;
-  padding: 1em;
-  border-radius: 1em;
-  p${PageText} {
-    display: flex;
-    align-items: center;
-    font-size: 1.25em;
-  }
-  // transform: scale(.95);
-  transition: all 0.5s ease;
-  &:hover {
-    // transform: scale(1);
-    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
-      0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1em;
+  .card{
+    padding: 3em 1em 1em;
+    height: 65vh;
+    ${media.lessThan("810px")`
+      height: auto;
+      `}
+    text-align: center;
+    p{
+      font-size: 1rem;
+      height: 20vh;
+      height: 20vh;
+      display: flex;
+      align-items: flex-start;
+    }
+    img{
+      max-height: 250px !important;
+      max-width: 270px !important;
+      ${media.lessThan("810px")`
+        max-width: 100% !important;
+      `}
+    }
   }
 `
 
@@ -118,6 +147,13 @@ export const TextContainer = styled.section`
 export const PublicaoesContaier = styled.section`
   p {
     margin: 1em 0;
+    a{
+      color: #4a4a4a;
+      &:hover{
+        color: #3273dc;
+        text-decoration: underline;
+      }
+    }
   }
 `
 export const EquipeContainer = styled.section`
