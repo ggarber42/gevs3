@@ -66,7 +66,9 @@ const PaginaParceiros = () => {
       <ImageCover fluid={markdown.frontmatter.image.childImageSharp.fluid} />
       <TextContainer>
         <div className="column is-10 is-offset-1">
+        <Fade left delay={300}>
           <h1>{markdown.frontmatter.title}</h1>
+        </Fade>
           <FlexContainer>
             {markdown.frontmatter.main.blurbs.map((blurb, index) => (
               <Fade bottom delay={index * 200}>
