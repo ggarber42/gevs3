@@ -6,6 +6,8 @@ description: >-
   Página com os Projetos do Gevs
 main:
     blurbs:
+        - image: /img/drone.jpg
+          nome : "Aliando drones e modelos hierárquicos para estimar abundância de animais silvestres"
         - image: /img/atlas_ambiental.jpg
           nome: "Atlas Ambiental Sítio Ramsar Sesc Pantanal"
         - image: /img/parda.jpg

@@ -330,4 +330,69 @@ body {
       }
     }
   }
+  .field{
+    button.button.is-link{
+      background-color: #318749 !important;
+    }
+  }
+  .column.is-10.is-offset-1{
+    .card{
+      @media (max-width: 1200px){
+        height: 80vh;
+      }
+      @media (max-width: 500px){
+        width: 100%;
+      }
+    }
+    @media (max-width: 500px) {
+      // margin-right: 2em;
+      // background-color: red;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .card{
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+  section.main-general{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    .container{
+      padding: 1.5em;
+      background: transparent;
+      h1{
+        color: #318749 !important;
+        width: 640px;
+        margin: 0 auto;
+        max-width: 50%;
+      }
+      .content{
+        padding: 1em;
+      }
+      form{
+        max-width: 50%;
+        margin: 0 auto;
+        label{
+          color: #fff;
+        }
+      }
+    }
+    video{
+      position: fixed;
+      inset: 0px;
+      height: 100vh;
+      width: 100%;
+      z-index: -1;
+      -o-object-fit: fill;
+      object-fit: fill;
+      -o-object-position: center center;
+      object-position: center center;
+      min-width: 1312px;
+      overflow: hidden;
+    }
+  }
 }

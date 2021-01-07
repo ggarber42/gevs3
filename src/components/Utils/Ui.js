@@ -77,6 +77,9 @@ export const ProjetoContainer = styled.section`
     img{
       max-height: 250px !important;
       max-width: 270px !important;
+      ${media.lessThan("1200px")`
+        max-width: 330px !important;
+      `}
       ${media.lessThan("810px")`
         max-width: 100% !important;
       `}
