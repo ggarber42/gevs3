@@ -16,7 +16,7 @@ main:
           nome: Andreas Kindel <br />Biólogo
           lates: http://lattes.cnpq.br/8762190723929036
         - image: /img/equipe/Barbara.jpg
-          nome: Barbara Zucatti Rangel <br />Biológa 
+          nome: Barbara Zucatti Rangel <br />Bióloga 
           lates: http://lattes.cnpq.br/3027987910679312
         - image: /img/equipe/Danielle.jpg
           nome: Danielle Crawshaw <br />Veterinária
@@ -40,13 +40,13 @@ main:
           nome: Guilherme Servi Gonçalves <br />Graduando em Ciências Biológicas
           lates: http://lattes.cnpq.br/3228837372465329
         - image: /img/equipe/heinrich.jpg
-          nome: Heinrich Hasenack <br /> geografo
+          nome: Heinrich Hasenack <br /> Geógrafo
           lates: http://lattes.cnpq.br/3628324110227487
         - image: /img/equipe/Ingridi.jpg
           nome: Ingridi Camboim Franceschi <br />Bióloga
           lates: http://lattes.cnpq.br/2777000853603877
         - image: /img/equipe/Isabel.jpg
-          nome: Isabel Salgueiro Lermen <br />Biológa
+          nome: Isabel Salgueiro Lermen <br />Bióloga
           lates: http://lattes.cnpq.br/3027987910679312
         - image: /img/equipe/Ismael.jpg
           nome: Ismael Verrastro Brack <br />Biólogo
@@ -55,7 +55,7 @@ main:
           nome: Marcione Brito de Oliveira <br />Bióloga 
           lates: http://lattes.cnpq.br/0033028853576389
         - image: /img/equipe/martha.jpg
-          nome: Martha Lima Brandão
+          nome: Martha Lima Brandão< br/>Veterinária
           lates: http://lattes.cnpq.br/0088013675665540
         - image: /img/equipe/Thais.jpg
           nome: Thaís Figueiredo Conceição <br />Bióloga

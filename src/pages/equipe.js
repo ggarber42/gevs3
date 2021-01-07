@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
-import { isMobile } from "react-device-detect"
+import { Fade } from "react-reveal"
+
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -64,7 +64,9 @@ const PaginaEquipe = () => {
       <ImageCover fluid={markdown.frontmatter.image.childImageSharp.fluid} />
       <TextContainer>
         <div className="column is-10 is-offset-1">
+        <Fade left delay={300}>
           <h1>{markdown.frontmatter.title}</h1>
+        </Fade>
           <EquipeContainer>
             {markdown.frontmatter.main.blurbs.map(blurb => (
               // <Img fixed={blurb.image.childImageSharp.fixed} />

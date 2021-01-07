@@ -134,6 +134,12 @@ export const EquipeContainer = styled.section`
       width: 150px;
       height: 150px;
     }
+    a{
+      color: #318749;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
     & > div {
       text-align: center;
     }
