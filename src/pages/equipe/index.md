@@ -55,7 +55,7 @@ main:
           nome: Marcione Brito de Oliveira <br />Bióloga 
           lates: http://lattes.cnpq.br/0033028853576389
         - image: /img/equipe/martha.jpg
-          nome: Martha Lima Brandão< br/>Veterinária
+          nome: Martha Lima Brandão < br/>Veterinária
           lates: http://lattes.cnpq.br/0088013675665540
         - image: /img/equipe/Thais.jpg
           nome: Thaís Figueiredo Conceição <br />Bióloga
