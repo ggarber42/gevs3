@@ -46,6 +46,7 @@ const PaginaProjetos = () => {
                     }
                   }
                   nome
+                  desc
                 }
               }
             }
@@ -78,6 +79,7 @@ const PaginaProjetos = () => {
                 image={blurb.image.childImageSharp.fluid.src}
                 nome={blurb.nome}
                 index={index}
+                desc={blurb.desc}
               />
             ))}
           </ProjetoContainer>

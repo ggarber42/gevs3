@@ -160,8 +160,8 @@ body {
           @media screen and (max-width: 1190px) {
             grid-template-columns: 30% 40% 60%;
           }
-          @media screen and (max-width: 1020px) {
-            display: flex;
+          @media screen and (max-width: 900px) {
+            display: flex !important;
             justify-content: center;
             flex-direction: column;
           }
@@ -337,6 +337,10 @@ body {
   }
   .column.is-10.is-offset-1{
     .card{
+      @media (max-width: 1555px){
+        max-width: 500px;
+        margin: 0 auto;
+      }
       @media (max-width: 1200px){
         height: 80vh;
       }
@@ -372,6 +376,10 @@ body {
       }
       .content{
         padding: 1em;
+        background-color: rgba(0,0,0,0.5);
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: .5em;
       }
       form{
         max-width: 50%;

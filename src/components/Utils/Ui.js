@@ -29,43 +29,19 @@ export const PageText = styled.p`
     font-size: 1rem;
   `}
 `
-// export const ProjetoContainer = styled.section`
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 2em;
-//   background: #fff;
-//   // box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
-//   ${media.lessThan("900px")`
-//     display: flex;
-//     flex-direction: column;
-//   `}
-//   background: #fff;
-//   padding: 1em;
-//   border-radius: 1em;
-//   p${PageText} {
-//     display: flex;
-//     align-items: center;
-//     font-size: 1.25em;
-//   }
-//   // transform: scale(.95);
-//   transition: all 0.5s ease;
-//   &:hover {
-//     // transform: scale(1);
-//     box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
-//       0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-//   }
-// `
-
 export const ProjetoContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1em;
   .card{
     padding: 3em 1em 1em;
-    height: 65vh;
-    ${media.lessThan("810px")`
-      height: auto;
-      `}
+    height: 110vh !important;
+    ${media.lessThan("1056px")`
+    height: 120vh !important;
+    `};
+    & > *{
+      margin-bottom: 1em;
+    }
     text-align: center;
     p{
       font-size: 1rem;
@@ -75,8 +51,8 @@ export const ProjetoContainer = styled.section`
       align-items: flex-start;
     }
     img{
-      max-height: 250px !important;
-      max-width: 270px !important;
+      // max-height: 250px !important;
+      // max-width: 270px !important;
       ${media.lessThan("1200px")`
         max-width: 330px !important;
       `}

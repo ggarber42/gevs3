@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import "react-bulma-components/dist/react-bulma-components.min.css"
 import { Fade } from "react-reveal"
+import { AiOutlineGlobal } from "react-icons/ai"
 
 import { ImageCover, PageText, TextContainer } from "../components/Utils/Ui"
 import Layout from "../components/Layout"
@@ -13,7 +14,7 @@ const PaginaSobre = () => {
       allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(sobre)/" } }) {
         edges {
           node {
-            id            
+            id
             frontmatter {
               title
               path
@@ -36,7 +37,7 @@ const PaginaSobre = () => {
 
   return (
     <Layout>
-      <SEO 
+      <SEO
         title={markDown.frontmatter.title}
         description={markDown.frontmatter.description}
       />
@@ -47,6 +48,9 @@ const PaginaSobre = () => {
             <h1>{markDown.frontmatter.title}</h1>
           </Fade>
           <PageText> {markDown.rawMarkdownBody} </PageText>
+          <a target="_blank" href="http://dgp.cnpq.br/dgp/espelhogrupo/368850">
+            <AiOutlineGlobal size={40} color="#318749" />
+          </a>
         </div>
       </TextContainer>
     </Layout>
