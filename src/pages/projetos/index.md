@@ -20,4 +20,5 @@ main:
           desc: Gerar conhecimento em ecologia, zoologia, genética e saúde para o manejo e controle das formas ferais de Sus scrofa, tanto em ecossistemas onde representa um elemento nativo da biodiversidade local (Península Ibérica) quanto em ecossistemas onde é uma espécie exótica invasora (Brasil).
         - image: /img/anta.jpg
           nome: "Estrutura e Heterogeneirade da Paisagem do Pantanal de Barão de Melgaço, MT: efeitos sobre a riqueza e densidade de mamíferos ungulados"
+          desc: "Contribuir ao conhecimento da fauna de mamíferos ungulados e suas relações com a paisagem da região do Pantanal de Barão do Melgaço, Mato Grosso. Como cenário para a compreensão das relações das espécies com o mosaico da paisagem."
 ---
