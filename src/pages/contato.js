@@ -2,7 +2,7 @@ import React from "react"
 import { withPrefix } from "gatsby"
 import { navigate } from "gatsby-link"
 import Layout from "../components/Layout"
-import videoContato from "../assets/videos/queixada_contato.mp4"
+import videoContato from "../assets/videos/contato.mp4"
 
 function encode(data) {
   return Object.keys(data)
