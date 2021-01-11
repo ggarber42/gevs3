@@ -13,7 +13,7 @@ main:
           nome: José Luis Passos Cordeiro <br/>Coordenador
           lates: http://lattes.cnpq.br/3430534497997843
         - image: /img/equipe/Andreas.jpg
-          nome: Andreas Kindel <br />Biólogo
+          nome: Andreas Kindel <br />Coordenador
           lates: http://lattes.cnpq.br/8762190723929036
         - image: /img/equipe/Barbara.jpg
           nome: Barbara Zucatti Rangel <br />Bióloga 

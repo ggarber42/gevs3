@@ -6,6 +6,14 @@ description: >-
   Página com os Projetos do Gevs
 main:
     blurbs:
+        - image: /img/vertebrados.jpg
+          nome: "Avaliação das fatalidades de vertebrados decorrentes do incêndio na RPPN Sesc Pantanal em 2020"
+          desc: "Quantificar a magnitude das fatalidades de vertebrados decorrente dos
+                 incêndios, entre o período de agosto a novembro de 2020, na RPPN
+                 Sesc Pantanal.
+                 Avaliar e identificar áreas com maior número de registros de carcaças
+                 em função da abundância das espécies, atributos da paisagem, tempo
+                 e intensidade do fogo."
         - image: /img/drone.jpg
           nome : "Aliando drones e modelos hierárquicos para estimar abundância de animais silvestres"
           desc: "Desenvolver e aplicar uma nova abordagem para estimar abundância de animais silvestres através de amostragem com drones. O desenvolvimento da abordagem envolve aplicar um desenho amostral, testar um método de processamento semiautomático das imagens e utilizar modelos hierárquicos para investigar a dinâmica espaço-temporal na abundância, levando em conta a detecção imperfeita. Pretende-se aplicar essa abordagem para estudar as relações espécie-ambiente de cervídeos de áreas abertas no Pantanal, no Pampa e nas savanas amazônicas."

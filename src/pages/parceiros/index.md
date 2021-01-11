@@ -16,4 +16,6 @@ main:
           nome: FioCruz
         - image: /img/curicaca.jpg
           nome: Instituto Curicaca
+        - image: /img/uerj.jpg
+          nome: Universidade Estadual do Rio de Janeiro
 ---
