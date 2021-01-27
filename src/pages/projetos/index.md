@@ -6,6 +6,12 @@ description: >-
   Página com os Projetos do Gevs
 main:
     blurbs:
+        - image: /img/tatu.jpg
+          nome: "Detecção de coronavírus em animais silvestres: integrando estudos em ecologia e saúde para vigilância de zoonose"
+          desc: "O Projeto visa detectar a infecção de SARS-CoV-2 e outros vírus da Família Coronaviridae, na fauna cearense de mamíferos, e desenvolver conhecimento sobre as possíveis relações ecológicas (parasito-hospedeiro-ambiente), envolvidas na transmissão desta enfermidade. Para isto, iremos desenvolver modelos e metodologias analíticas que descrevam a diversidade das comunidades de hospedeiros e seu papel no ciclo de transmissão de coronavírus, prevendo o risco de transmissão para humanos."
+        - image: /img/lab_binacional.jpg
+          nome: "Laboratório Binacional Brasil/Portugal"
+          desc: "Implantação de laboratório, com sede na Universidade de Aveiro (Portugal),  cooperativo entre universidades européias e instituições brasileiras de Pesquisa, Desenvolvimento, Ensino e Inovação no campo da ecologia e saúde."
         - image: /img/vertebrados.jpg
           nome: "Avaliação das fatalidades de vertebrados decorrentes do incêndio na RPPN Sesc Pantanal em 2020"
           desc: "Quantificar a magnitude das fatalidades de vertebrados decorrente dos
