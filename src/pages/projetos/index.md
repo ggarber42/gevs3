@@ -33,7 +33,7 @@ main:
       nome: "Onças-pintadas e pardas em um mosaico de pantanais no Mato Grosso:
         perspectivas a partir da RPPN Sesc pantanal e adjacências (Barão de
         Melgaço e Poconé, MT)"
-      desc: teste
+      desc: " "
     - image: /img/porco.jpg
       nome: "Formas ferais de Sus scrofa L. (javalis e porcos asselvajados) como
         elemento nativo e exótico invasor: ecologia, caracterização sanitária,
