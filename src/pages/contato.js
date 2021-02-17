@@ -31,7 +31,8 @@ export default class Index extends React.Component {
         ...this.state,
       }),
     })
-      .then(() => navigate(form.getAttribute("action")))
+      // .then(() => navigate(form.getAttribute("action")))
+      .then(() => alert('Email enviado'))
       .catch(error => alert(error))
   }
 
