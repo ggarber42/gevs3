@@ -46,6 +46,7 @@ const PaginaParceiros = () => {
                     }
                   }
                   nome
+                  link
                 }
               }
             }
@@ -72,7 +73,9 @@ const PaginaParceiros = () => {
           <FlexContainer>
             {markdown.frontmatter.main.blurbs.map((blurb, index) => (
               <Fade bottom delay={index * 200}>
-                <Img fixed={blurb.image.childImageSharp.fixed} />
+                  <a target="_blank" href={blurb.link}>
+                    <Img fixed={blurb.image.childImageSharp.fixed} />
+                  </a>
               </Fade>
             ))}
           </FlexContainer>

@@ -39,3 +39,19 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Descricao SEO, name: description, widget: text}
           - {label: Main , name: main, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Nome, name: nome, widget: text}, {label: Descricao, name: desc, widget: text}]}]}
+      - file: "src/pages/parceiros/index.md"
+        label: "Página de Parceiros"
+        name: "parceiros"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Descricao SEO, name: description, widget: text}
+          - {label: Main , name: main, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Nome, name: nome, widget: text}, {label: Descricao, name: desc, widget: text}]}]}
+      - file: "src/pages/equipe/index.md"
+        label: "Página da Equipe"
+        name: "equipe"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Descricao SEO, name: description, widget: text}
+          - {label: Main , name: main, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Nome, name: nome, widget: text}, {label: Descricao, name: desc, widget: text}]}]}
