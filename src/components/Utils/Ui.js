@@ -35,7 +35,7 @@ export const ProjetoContainer = styled.section`
   grid-gap: 1em;
   .card{
     padding: 3em 1em 1em;
-    height: 110vh !important;
+    height: 130vh !important;
     ${media.lessThan("1056px")`
     height: 120vh !important;
     `};

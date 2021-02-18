@@ -34,7 +34,7 @@ export default class Index extends React.Component {
       // .then(() => navigate(form.getAttribute("action")))
       .then(() => {
         alert('Email enviado');
-        setTimeout(() => {navigate('/contato'),750});
+        setTimeout(() => {navigate('/')},750);
       })
       .catch(error => alert(error))
   }
