@@ -6,7 +6,7 @@ description: Página com as publicações do Gevs
 ---
 #### **Artigos Publicados em Periódicos**
 
-### [De Oliveira, MB, Brandão ML, Cordeiro JLP, Oliveira LFB, Peracchi AL. Composition and frequency of capture of bat assemblages in a landscape mosaic in northern Pantanal, Mato Grosso, Brazil. Mastozoologia Neotropical /Journal Of Neotropical Mammalogy, 27(1):39-52, 2020.](https://doi.org/10.31687/saremMN.20.27.1.0.25) [](https://doi.org/10.31687/saremMN.20.27.1.0.25)
+[De Oliveira, MB, Brandão ML, Cordeiro JLP, Oliveira LFB, Peracchi AL. Composition and frequency of capture of bat assemblages in a landscape mosaic in northern Pantanal, Mato Grosso, Brazil. Mastozoologia Neotropical /Journal Of Neotropical Mammalogy, 27(1):39-52, 2020.](https://doi.org/10.31687/saremMN.20.27.1.0.25) [](https://doi.org/10.31687/saremMN.20.27.1.0.25)
 
 [Cordeiro, JLP, Hofmann, GS, Fonseca, C, Oliveira, LFB. Achilles heel of a powerful invader: restrictions on distribution and disappearance of feral pigs from a protected area in Northern Pantanal, Western Brazil. PeerJ, 6: e4200, 2018. ](https://doi.org/10.7717/peerj.4200)[](https://doi.org/10.7717/peerj.4200)
 
@@ -28,4 +28,4 @@ description: Página com as publicações do Gevs
 
 #### **Livros publicados**
 
-**[Hofmann, GS, Bastazini, VAG, Coelho, IP, Oliveira, LFB. Fauna da Reserva Particular do Patrimônio Natural SESC Pantanal: uma perspectiva através de armadilhas fotográficas. 1. ed. Rio de Janeiro: SESC, Serviço Social do Comércio, Departamento Nacional, 2013. 71p. ](https://www.sescpantanal.com.br/arquivos/cadastro-itens/layout-6/arquivos/file-636004641363334343.pdf)[](https://www.sescpantanal.com.br/arquivos/cadastro-itens/layout-6/arquivos/file-636004641363334343.pdf)**
+[Hofmann, GS, Bastazini, VAG, Coelho, IP, Oliveira, LFB. Fauna da Reserva Particular do Patrimônio Natural SESC Pantanal: uma perspectiva através de armadilhas fotográficas. 1. ed. Rio de Janeiro: SESC, Serviço Social do Comércio, Departamento Nacional, 2013. 71p. ](https://www.sescpantanal.com.br/arquivos/cadastro-itens/layout-6/arquivos/file-636004641363334343.pdf)[](https://www.sescpantanal.com.br/arquivos/cadastro-itens/layout-6/arquivos/file-636004641363334343.pdf)
