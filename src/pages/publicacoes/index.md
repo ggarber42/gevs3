@@ -24,8 +24,6 @@ description: Página com as publicações do Gevs
 
 [Cordeiro, JLP, Oliveira, LFB. Models of the distribution of *Zygodontomys brevicauda* (Allen and Chapman 1893)(Mammalia: Muridae) in the savannas of Roraima, northern Brazil. Arquivos do Museu Nacional do Rio de Janeiro, 63: 49-62, 2005. ](http://www.ecologia.ufrgs.br/labgeo/arquivos/Publicacoes/Periodicos/2005/Cordeiro_e_Oliveira_2005_Models_distribution_Zygodontomys_brevicauda.pdf)[](http://www.ecologia.ufrgs.br/labgeo/arquivos/Publicacoes/Periodicos/2005/Cordeiro_e_Oliveira_2005_Models_distribution_Zygodontomys_brevicauda.pdf)
 
-[Cordeiro, JLP, Oliveira, LFB. Models of the distribution of *Zygodontomys brevicauda* (Allen and Chapman 1893)(Mammalia: Muridae) in the savannas of Roraima, northern Brazil. Arquivos do Museu Nacional do Rio de Janeiro, 63: 49-62, 2005. ](http://www.ecologia.ufrgs.br/labgeo/arquivos/Publicacoes/Periodicos/2005/Cordeiro_e_Oliveira_2005_Models_distribution_Zygodontomys_brevicauda.pdf)[](http://www.ecologia.ufrgs.br/labgeo/arquivos/Publicacoes/Periodicos/2005/Cordeiro_e_Oliveira_2005_Models_distribution_Zygodontomys_brevicauda.pdf)
-
 #### **Livros publicados**
 
 [Hofmann, GS, Bastazini, VAG, Coelho, IP, Oliveira, LFB. Fauna da Reserva Particular do Patrimônio Natural SESC Pantanal: uma perspectiva através de armadilhas fotográficas. 1. ed. Rio de Janeiro: SESC, Serviço Social do Comércio, Departamento Nacional, 2013. 71p. ](https://www.sescpantanal.com.br/arquivos/cadastro-itens/layout-6/arquivos/file-636004641363334343.pdf)[](https://www.sescpantanal.com.br/arquivos/cadastro-itens/layout-6/arquivos/file-636004641363334343.pdf)
