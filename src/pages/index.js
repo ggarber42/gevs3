@@ -54,13 +54,7 @@ const IndexPage = () => {
             </div>
             <div className="main">
               <p>
-                Somos um grupo de pesquisadores de diferentes instituições com o
-                objetivo em comum de estudar diversas formas de vida, seja ela
-                fauna ou flora, em ambientes com predominações vegetacionais
-                abertas, como pantanal, cerrado e campinaranas na Amazônia.
-                Buscamos estudar a vida silvestre como um todo, tentando
-                compreender suas relações complexas dentro de mosaicos de
-                paisagens heterogêneas.
+              Somos um grupo de pesquisadores de diferentes instituições com o objetivo em comum de estudar diversas formas de vida, sejam elas da fauna ou da flora, em ambientes com predomínio de formações abertas, como pantanal, cerrado, campinaranas na Amazônia ou campos do Sul. Buscamos estudar a vida silvestre de forma integrada, aproximando o entendimento de relações complexas em mosaicos de paisagens heterogêneas.
               </p>
             </div>
             <AniLink
