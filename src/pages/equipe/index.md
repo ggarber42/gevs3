@@ -17,7 +17,7 @@ main:
           lates: http://lattes.cnpq.br/8762190723929036
         - image: /img/equipe/Barbara.jpg
           nome: Barbara Zucatti Rangel <br />Bióloga 
-          lates: http://lattes.cnpq.br/3027987910679312
+          lates: http://lattes.cnpq.br/5725006465682611
         - image: /img/equipe/Danielle.jpg
           nome: Danielle Crawshaw <br />Veterinária
           lates: http://lattes.cnpq.br/0842727821892253

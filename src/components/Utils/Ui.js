@@ -35,9 +35,9 @@ export const ProjetoContainer = styled.section`
   grid-gap: 1em;
   .card{
     padding: 3em 1em 1em;
-    height: 130vh !important;
+    // height: 150vh !important;
     ${media.lessThan("1056px")`
-    height: 120vh !important;
+    // height: 120vh !important;
     `};
     & > *{
       margin-bottom: 1em;
@@ -45,8 +45,8 @@ export const ProjetoContainer = styled.section`
     text-align: center;
     p{
       font-size: 1rem;
-      height: 20vh;
-      height: 20vh;
+      // height: 20vh;
+      // height: 20vh;
       display: flex;
       align-items: flex-start;
     }

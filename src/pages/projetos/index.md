@@ -67,4 +67,26 @@ main:
         (Portugal),  cooperativo entre universidades européias e instituições
         brasileiras de Pesquisa, Desenvolvimento, Ensino e Inovação no campo da
         ecologia e saúde.
+    - nome: >
+        Padrões de diversidade funcional e filogenética ao longo de gradientes
+        ambientais: perspectivas através do uso de recursos por comunidades de
+        quirópteros
+      desc: >
+        O conhecimento das relações entre as espécies e seus habitats são as
+        principais informações para a construção da maioria das atuais
+        estratégias conservacionistas. As dimensões dos gradientes de variação,
+        expressos pelas mudanças na diversidade no mosaico da vegetação,
+        certamente apresentam efeitos expressivos sobre a estrutura e composição
+        da fauna de quirópteros. As considerações das diferentes maneiras pelas
+        quais os morcegos estão envolvidos na exploração de recursos podem ser
+        usadas para definir grupos funcionais. Nesse sentido, serão consideradas
+        variações entre os mosaicos da paisagens, objetivando verificar as
+        respostas do grupo tanto em relação às manchas naturais de vegetação,
+        quanto aquelas decorrentes da forma de uso da terra. A proposta do
+        estudo é determinar se o uso do habitat pelas populações de morcegos
+        varia dentro e entre as comunidades estudadas e para entender como é que
+        a diversidade funcional varia em uma comunidade, é preciso compreender o
+        padrão subjacente de riqueza de espécies e variação espacial entre as
+        faunas regionais em relação à composição das espécies.
+      image: /img/noctilio.jpg
 ---
