@@ -21,7 +21,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Home" description="Grupo de Estudos em Vida Silvestre"/>
       <section className="video-container">
         <video autoPlay muted loop>
           <source src={withPrefix(BgMp4)} type="video/mp4" />
