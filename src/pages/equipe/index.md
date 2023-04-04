@@ -61,4 +61,5 @@ main:
       lates: http://lattes.cnpq.br/3012439824570509
     - image: /img/dsc00854.jpg
       nome: Lucas Rodrigues Schunck <br />Graduando em Ciências Biológicas
+      lates: https://lattes.cnpq.br/5893777421153598
 ---
